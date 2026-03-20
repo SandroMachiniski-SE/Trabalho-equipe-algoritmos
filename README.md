@@ -1,49 +1,57 @@
-# Trabalho-equipe-algoritmos-avançados
-Repositório para trabalho de Algoritmos Avançados com Professor Glauco.
+# 🤖 Trabalho — IA para Desenvolvimento + Revisão de Estruturas de Dados I
 
-📚 Objetivo
-Este repositório tem como finalidade reunir exercícios e implementações práticas de Arrays, Listas Encadeadas e Pilhas, como parte da revisão de conteúdo da disciplina de Estruturas de Dados.
-O projeto será desenvolvido em equipe de três integrantes, com foco em:
-- Reforçar conceitos fundamentais.
-- Implementar soluções em código.
-- Documentar aprendizados e desafios.
+Repositório desenvolvido para a disciplina de Algoritmos Avançados, com o objetivo de revisar Estruturas de Dados I por meio da resolução de problemas no estilo *code interview*, utilizando Inteligência Artificial como apoio no desenvolvimento.
 
-👥 Integrantes
-- Diego Cunha
-- Lucas Eufrasio
-- Sandro Machiniski
+---
 
-📂 Estrutura do Repositório
+## 📚 Objetivo
+
+Este projeto tem como finalidade:
+
+- Aplicar conceitos de Arrays, Listas Encadeadas e Pilhas
+- Resolver problemas clássicos de entrevistas técnicas
+- Utilizar IA como ferramenta de apoio no desenvolvimento
+- Desenvolver raciocínio lógico e análise de complexidade
+- Documentar soluções e aprendizados
+
+---
+
+## 👥 Integrantes
+
+- Diego Cunha  
+- Lucas Eufrasio  
+- Sandro Machiniski  
+
+---
+
+## 🤖 IA Utilizada
+
+- **Ferramenta:** ChatGPT  
+- **Acesso:** Web (navegador)  
+
+### 🔎 Como a IA foi utilizada
+
+- Interpretação dos enunciados
+- Geração de ideias de solução
+- Revisão de código
+- Explicação de algoritmos
+- Análise de complexidade (tempo e memória)
+- Sugestão de testes adicionais
+
+---
+
+## 📂 Estrutura do Repositório
+
+```text
 /arrays
-    exercicio1.md
-    exercicio2.md
+    two_sum.md (Sandro)
+    maximum_subarray.md (Lucas)
+    best_time_to_buy_and_sell_stock.md (Lucas)
+
 /listas_encadeadas
-    lista_simples.md
-    lista_dupla.md
+    (em desenvolvimento)
+
 /pilhas
-    pilha_estatica.md
-    pilha_dinamica.md
+    (em desenvolvimento)
+
 README.md
-
-
-
-🔧 Tecnologias Utilizadas
-- Linguagem: (ex.: Python, Java ou C++)
-- Git/GitHub para versionamento
-- Markdown para documentação
-
-🚀 Fluxo de Trabalho
-- Cada integrante cria uma branch para suas tarefas.
-- Após concluir, abre um Pull Request para revisão.
-- Revisão feita por outro integrante antes de integrar ao main.
-- Discussões e dúvidas registradas em Issues.
-
-📌 Exercícios
-- Arrays: manipulação, busca, ordenação.
-- Listas Encadeadas: inserção, remoção, percorrimento.
-- Pilhas: operações push/pop, verificação de pilha cheia/vazia.
-
-✅ Regras de Colaboração
-- Mensagens de commit devem ser claras e descritivas.
-- Não realizar alterações diretamente na branch main.
-- Revisão obrigatória de código antes do merge.
