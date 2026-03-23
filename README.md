@@ -148,7 +148,7 @@ Todos os arquivos foram revisados e melhorados com:
 - ✅ **Exemplos de Uso** - Demonstração de entrada/saída esperadas
 
 ### 🧪 Testes
-- ✅ **Testes Abrangentes** - 6-8 testes por arquivo
+- ✅ **Testes Abrangentes** - testes por arquivo
 - ✅ **Edge Cases** - Listas vazias, um elemento, valores duplicados, etc
 - ✅ **Validação Detalhada** - Cada teste mostra entrada, resultado e status
 
@@ -167,6 +167,8 @@ Cada arquivo pode ser executado diretamente:
 # Arrays
 python best_time_to_buy_and_sell_stock.py
 python MaximumSubarray
+python .\Diego\arrays\contains_duplicate.py
+python .\Diego\arrays\product_except_self.py
 
 # Listas Encadeadas
 python reverse_linked_list.py
@@ -228,8 +230,8 @@ Status: ✓ PASSOU
 
 ## 📊 Resumo de Testes
 
-- **Total de Arquivos:** 7
-- **Total de Testes:** 38+
+- **Total de Arquivos:** 8
+- **Total de Testes:** 41+
 - **Taxa de Sucesso:** 100% ✓
 
 ---
