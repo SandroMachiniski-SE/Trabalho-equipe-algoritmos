@@ -22,7 +22,7 @@ Este projeto tem como finalidade:
 |-----------|--------------|
 | **Lucas Eufrasio** | Best Time to Buy and Sell Stock, Maximum Subarray, Reverse Linked List, Merge Two Sorted Lists, Min Stack, Valid Parentheses (Código, Documentação, Type Hints, Testes) |
 | **Sandro Machiniski** | Two Sum (Array) |
-| **Diego Cunha** | (Em desenvolvimento) |
+| **Diego Cunha** | (contains_duplicate, product_except_self) |
 
 ---
 
@@ -61,6 +61,8 @@ python --version
 | `two_sum.py` | Encontrar dois números que somam um alvo | Sandro | O(n) time, O(n) space | - |
 | `best_time_to_buy_and_sell_stock.py` | Encontrar maior lucro em compra/venda de ações | Lucas | O(n) time, O(1) space | 6 testes |
 | `MaximumSubarray` | Subarray máximo com Algoritmo de Kadane | Lucas | O(n) time, O(1) space | 6 testes |
+| `contains_duplicate.py` | Retorna True se existir valor repetido | Diego | O(n) time, O(n) space | 2 testes |
+| `product_except_self.py` | Produto de todos exceto o atual (sem divisão) | Diego | O(n) time, O(n) space | 1 teste |
 
 ### 🔗 Listas Encadeadas
 
@@ -99,6 +101,16 @@ python --version
 - **Estratégia:** Dynamic Programming - Rastrear soma máxima terminando em cada posição
 - **Complexidade:** O(n) time, O(1) space
 - **Caso de Uso:** Problemas de otimização com subarrays
+
+#### **Contains Duplicate** (Diego)
+- **Objetivo:** Identificar se algum elemento aparece mais de uma vez em um array.
+- **Estratégia:** Utilização de `set()` para busca em tempo constante.
+- **Complexidade:** O(n) time, O(n) space.
+
+#### **Product of Array Except Self** (Diego)
+- **Objetivo:** Calcular o produto de todos os números exceto o atual sem usar divisão.
+- **Estratégia:** Técnica de Prefixos e Sufixos (duas passagens no array).
+- **Complexidade:** O(n) time, O(n) space.
 
 ### 🔗 Listas Encadeadas
 
