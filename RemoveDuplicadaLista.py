@@ -46,6 +46,7 @@ if __name__ == "__main__":
     lista.append(2)
     lista.append(2)
     lista.append(3)
+    lista.append(3)
     lista.append(1)
 
     print("Antes de remover duplicatas:")

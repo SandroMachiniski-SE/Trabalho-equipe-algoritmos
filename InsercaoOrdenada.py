@@ -38,6 +38,6 @@ lista.insert_sorted(26)
 lista.insert_sorted(93)
 lista.insert_sorted(17)
 lista.insert_sorted(77)
-lista.insert_sorted(31)
+lista.insert_sorted(30)
 
 lista.print_list()  # saída esperada: 17 -> 26 -> 31 -> 54 -> 77 -> 93
