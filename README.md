@@ -22,7 +22,7 @@ Este projeto tem como finalidade:
 |-----------|--------------|
 | **Lucas Eufrasio** | Best Time to Buy and Sell Stock, Maximum Subarray, Reverse Linked List, Merge Two Sorted Lists, Min Stack, Valid Parentheses (Código, Documentação, Type Hints, Testes) |
 | **Sandro Machiniski** | Two Sum (Array) |
-| **Diego Cunha** | (contains_duplicate, product_except_self) |
+| **Diego Cunha** | Contains Duplicate, Product Except Self, Middle of Linked List, Remove Nth From End |
 
 ---
 
@@ -70,6 +70,8 @@ python --version
 |---------|-----------|---------|--------------|--------|
 | `reverse_linked_list.py` | Reverter uma lista encadeada | Lucas | O(n) time, O(1) space | 6 testes |
 | `merge_two_sorted_lists.py` | Mesclar duas listas encadeadas ordenadas | Lucas | O(n + m) time, O(1) space | 6 testes |
+| `middle_of_linked_list.py` | Encontrar o elemento central da lista | Diego | O(n) time, O(1) space | 1 teste |
+| `remove_nth_from_end.py` | Remover o n-ésimo nó a partir do final | Diego | O(n) time, O(1) space | 1 teste |
 
 ### 📚 Pilhas
 
@@ -125,6 +127,18 @@ python --version
 - **Estratégia:** Two Pointers + Dummy Node - Comparar elementos e conectar
 - **Complexidade:** O(n + m) time, O(1) space
 - **Caso de Uso:** Merge Sort, fusão eficiente de dados ordenados
+
+#### **Middle of the Linked List** (Diego)
+- **Objetivo:** Encontrar o nó central da lista encadeada
+- **Estratégia:** Two Pointers (Lento/Rápido) - Um ponteiro avança 1 passo e o outro 2 passos
+- **Complexidade:** O(n) time, O(1) space
+- **Caso de Uso:** Divisão de listas, algoritmos de busca e otimização de travessia
+
+#### **Remove Nth Node From End** (Diego)
+- **Objetivo:** Remover o n-ésimo nó a partir do final da lista
+- **Estratégia:** Dois ponteiros + Dummy Node - Mantém distância fixa entre ponteiros
+- **Complexidade:** O(n) time, O(1) space
+- **Caso de Uso:** Manipulação segura de nós, especialmente remoção em listas encadeadas
 
 ### 📚 Pilhas
 
@@ -230,8 +244,8 @@ Status: ✓ PASSOU
 
 ## 📊 Resumo de Testes
 
-- **Total de Arquivos:** 8
-- **Total de Testes:** 41+
+- **Total de Arquivos:** 10
+- **Total de Testes:** 43+
 - **Taxa de Sucesso:** 100% ✓
 
 ---
