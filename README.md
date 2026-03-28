@@ -22,7 +22,7 @@ Este projeto tem como finalidade:
 |-----------|--------------|
 | **Lucas Eufrasio** | Best Time to Buy and Sell Stock, Maximum Subarray, Reverse Linked List, Merge Two Sorted Lists, Min Stack, Valid Parentheses (Código, Documentação, Type Hints, Testes) |
 | **Sandro Machiniski** | Two Sum (Array) |
-| **Diego Cunha** | Contains Duplicate, Product Except Self, Middle of Linked List, Remove Nth From End |
+| **Diego Cunha** | Contains Duplicate, Product Except Self, Middle of Linked List, Remove Nth From End, Baseball Game, Daily Temperatures (Código, Documentação, Docstrings, Testes) |
 
 ---
 
@@ -61,8 +61,8 @@ python --version
 | `two_sum.py` | Encontrar dois números que somam um alvo | Sandro | O(n) time, O(n) space | - |
 | `best_time_to_buy_and_sell_stock.py` | Encontrar maior lucro em compra/venda de ações | Lucas | O(n) time, O(1) space | 6 testes |
 | `MaximumSubarray` | Subarray máximo com Algoritmo de Kadane | Lucas | O(n) time, O(1) space | 6 testes |
-| `contains_duplicate.py` | Retorna True se existir valor repetido | Diego | O(n) time, O(n) space | 2 testes |
-| `product_except_self.py` | Produto de todos exceto o atual (sem divisão) | Diego | O(n) time, O(n) space | 1 teste |
+| `contains_duplicate.py` | Retorna True se existir valor repetido | Diego | O(n) time, O(n) space | 6 testes |
+| `product_except_self.py` | Produto de todos exceto o atual (sem divisão) | Diego | O(n) time, O(n) space | 6 teste |
 
 ### 🔗 Listas Encadeadas
 
@@ -70,8 +70,8 @@ python --version
 |---------|-----------|---------|--------------|--------|
 | `reverse_linked_list.py` | Reverter uma lista encadeada | Lucas | O(n) time, O(1) space | 6 testes |
 | `merge_two_sorted_lists.py` | Mesclar duas listas encadeadas ordenadas | Lucas | O(n + m) time, O(1) space | 6 testes |
-| `middle_of_linked_list.py` | Encontrar o elemento central da lista | Diego | O(n) time, O(1) space | 1 teste |
-| `remove_nth_from_end.py` | Remover o n-ésimo nó a partir do final | Diego | O(n) time, O(1) space | 1 teste |
+| `middle_of_linked_list.py` | Encontrar o elemento central da lista | Diego | O(n) time, O(1) space | 6 teste |
+| `remove_nth_from_end.py` | Remover o n-ésimo nó a partir do final | Diego | O(n) time, O(1) space | 6 teste |
 
 ### 📚 Pilhas
 
@@ -79,6 +79,8 @@ python --version
 |---------|-----------|---------|--------------|--------|
 | `min_stack.py` | Pilha com operação de mínimo em O(1) | Lucas | push/pop/top/getMin: O(1) | 6 testes |
 | `valid_parentheses.py` | Validar sequência de parênteses/colchetes/chaves | Lucas | O(n) time, O(n) space | 8 testes |
+| `baseball_game.py` | Simulação de pontuação com operações em pilha | Diego | O(n) time, O(n) space | 6 testes |
+| `daily_temperatures.py` | Dias até temperatura maior usando pilha monotônica | Diego | O(n) time, O(n) space | 6 testes |
 
 ---
 
@@ -105,14 +107,16 @@ python --version
 - **Caso de Uso:** Problemas de otimização com subarrays
 
 #### **Contains Duplicate** (Diego)
-- **Objetivo:** Identificar se algum elemento aparece mais de uma vez em um array.
-- **Estratégia:** Utilização de `set()` para busca em tempo constante.
-- **Complexidade:** O(n) time, O(n) space.
+- **Objetivo:** Identificar se algum elemento aparece mais de uma vez em um array
+- **Estratégia:** Utilização de `set()` para busca em tempo constante
+- **Complexidade:** O(n) time, O(n) space
+- **Testes:** Lista com duplicata, sem duplicata, lista vazia, um elemento, negativos duplicados, todos iguais
 
 #### **Product of Array Except Self** (Diego)
-- **Objetivo:** Calcular o produto de todos os números exceto o atual sem usar divisão.
-- **Estratégia:** Técnica de Prefixos e Sufixos (duas passagens no array).
-- **Complexidade:** O(n) time, O(n) space.
+- **Objetivo:** Calcular o produto de todos os números exceto o atual sem usar divisão
+- **Estratégia:** Técnica de Prefixos e Sufixos (duas passagens no array)
+- **Complexidade:** O(n) time, O(1) space extra
+- **Testes:** Caso clássico, lista com zero, dois zeros, negativos, dois elementos, um elemento
 
 ### 🔗 Listas Encadeadas
 
@@ -133,12 +137,14 @@ python --version
 - **Estratégia:** Two Pointers (Lento/Rápido) - Um ponteiro avança 1 passo e o outro 2 passos
 - **Complexidade:** O(n) time, O(1) space
 - **Caso de Uso:** Divisão de listas, algoritmos de busca e otimização de travessia
+- **Testes:** Lista ímpar, lista par (segundo nó do meio), um elemento, dois elementos, lista vazia, três elementos
 
 #### **Remove Nth Node From End** (Diego)
 - **Objetivo:** Remover o n-ésimo nó a partir do final da lista
-- **Estratégia:** Dois ponteiros + Dummy Node - Mantém distância fixa entre ponteiros
+- **Estratégia:** Dois Ponteiros + Dummy Node - Mantém distância fixa de n+1 entre ponteiros
 - **Complexidade:** O(n) time, O(1) space
 - **Caso de Uso:** Manipulação segura de nós, especialmente remoção em listas encadeadas
+- **Testes:** Remove 2º do fim, remove último, remove cabeça, um elemento, dois elementos (ambos os casos)
 
 ### 📚 Pilhas
 
@@ -153,6 +159,20 @@ python --version
 - **Estratégia:** Stack - Empilar aberturas, desempilhar ao encontrar fechamentos
 - **Complexidade:** O(n) time, O(n) space
 - **Caso de Uso:** Validação de sintaxe, parsing de expressões
+
+#### **Baseball Game** (Diego)
+- **Objetivo:** Simular um sistema de pontuação baseado em operações sequenciais
+- **Estratégia:** Stack - Empilhar pontuações válidas e aplicar operações (`+`, `D`, `C`)
+- **Complexidade:** O(n) time, O(n) space
+- **Caso de Uso:** Simulação de estados com histórico mutável
+- **Testes:** Caso clássico, apenas números, operação D, operação C, operação +, sequência mista com negativos
+
+#### **Daily Temperatures** (Diego)
+- **Objetivo:** Para cada dia, calcular quantos dias faltam até uma temperatura maior
+- **Estratégia:** Stack Monotônica Decrescente - Empilhar índices sem resposta e resolver ao encontrar temperatura maior
+- **Complexidade:** O(n) time, O(n) space
+- **Caso de Uso:** Problemas de "próximo elemento maior" em sequências
+- **Testes:** Caso clássico, sequência crescente, decrescente, valores iguais, um elemento, pico no meio
 
 Todos os arquivos foram revisados e melhorados com:
 
@@ -187,10 +207,16 @@ python .\Diego\arrays\product_except_self.py
 # Listas Encadeadas
 python reverse_linked_list.py
 python merge_two_sorted_lists.py
+python .\Diego\linked_lists\middle_of_linked_list.py
+python .\Diego\linked_lists\remove_nth_from_end.py
+
 
 # Pilhas
 python min_stack.py
 python valid_parentheses.py
+python .\Diego\stacks\baseball_game.py
+python .\Diego\stacks\daily_temperatures.py
+
 ```
 
 Todos os testes serão executados automáticamente e mostram o status (✓ PASSOU ou ✗ FALHOU).
@@ -244,8 +270,8 @@ Status: ✓ PASSOU
 
 ## 📊 Resumo de Testes
 
-- **Total de Arquivos:** 10
-- **Total de Testes:** 43+
+- **Total de Arquivos:** 12
+- **Total de Testes:** 68+
 - **Taxa de Sucesso:** 100% ✓
 
 ---
@@ -261,8 +287,8 @@ Status: ✓ PASSOU
 - **Análise Assintótica:** Notação Big O para tempo e espaço
 - **Arrays:** Busca, otimização de espaço e tempo
 - **Listas Encadeadas:** Manipulação de ponteiros, reversão, mesclagem
-- **Pilhas:** LIFO (Last In, First Out), aplicações em validações
-- **Técnicas de Algoritmo:** Greedy, Dynamic Programming, Two Pointers, Stack-based
+- **Pilhas:** LIFO (Last In, First Out), aplicações em validações e simulações
+- **Técnicas de Algoritmo:** Greedy, Dynamic Programming, Two Pointers, Stack Monotônica, Prefixos e Sufixos
 
 ### Plataformas de Referência
 - LeetCode (Problemas de entrevista técnica)
