@@ -21,8 +21,8 @@ Este projeto tem como finalidade:
 | Integrante | Contribuições |
 |-----------|--------------|
 | **Lucas Eufrasio** | Best Time to Buy and Sell Stock, Maximum Subarray, Reverse Linked List, Merge Two Sorted Lists, Min Stack, Valid Parentheses (Código, Documentação, Type Hints, Testes) |
-| **Sandro Machiniski** | Two Sum (Array) |
 | **Diego Cunha** | Contains Duplicate, Product Except Self, Middle of Linked List, Remove Nth From End, Baseball Game, Daily Temperatures (Código, Documentação, Docstrings, Testes) |
+| **Sandro Machiniski** | Two Sum, Inserção Ordenada em Lista Encadeada, Manipulação de Array, Remoção de Duplicatas em Lista Encadeada |
 
 ---
 
@@ -58,11 +58,12 @@ python --version
 
 | Arquivo | Descrição | Autoria | Complexidade | Testes |
 |---------|-----------|---------|--------------|--------|
-| `two_sum.py` | Encontrar dois números que somam um alvo | Sandro | O(n) time, O(n) space | - |
 | `best_time_to_buy_and_sell_stock.py` | Encontrar maior lucro em compra/venda de ações | Lucas | O(n) time, O(1) space | 6 testes |
 | `MaximumSubarray` | Subarray máximo com Algoritmo de Kadane | Lucas | O(n) time, O(1) space | 6 testes |
 | `contains_duplicate.py` | Retorna True se existir valor repetido | Diego | O(n) time, O(n) space | 6 testes |
 | `product_except_self.py` | Produto de todos exceto o atual (sem divisão) | Diego | O(n) time, O(n) space | 6 teste |
+| `TwoSum.py` | Encontrar dois números que somam um alvo | Sandro | O(n) time, O(n) space | 2 testes |
+| `ManipulacaoDoArray.py` | Leitura interativa, exibição de estatísticas e busca em array | Sandro | O(n) time, O(n) space | - |
 
 ### 🔗 Listas Encadeadas
 
@@ -72,6 +73,8 @@ python --version
 | `merge_two_sorted_lists.py` | Mesclar duas listas encadeadas ordenadas | Lucas | O(n + m) time, O(1) space | 6 testes |
 | `middle_of_linked_list.py` | Encontrar o elemento central da lista | Diego | O(n) time, O(1) space | 6 teste |
 | `remove_nth_from_end.py` | Remover o n-ésimo nó a partir do final | Diego | O(n) time, O(1) space | 6 teste |
+| `InsercaoOrdenada.py` | Inserção ordenada em lista encadeada | Sandro | O(n) time, O(1) space | - |
+| `RemoveDuplicadaLista.py` | Remoção de nós duplicados em lista encadeada | Sandro | O(n) time, O(n) space | 1 teste |
 
 ### 📚 Pilhas
 
@@ -93,6 +96,12 @@ python --version
 - **Estratégia:** Hash Map - Armazenar valores visitados para busca O(1)
 - **Complexidade:** O(n) time, O(n) space
 - **Caso de Uso:** Problemas de busca com par de elementos
+
+#### **Manipulação de Array** (Sandro)
+- **Objetivo:** Ler valores do usuário, exibir estatísticas (maior, menor, soma, ordenação) e verificar presença de elemento
+- **Estratégia:** Funções built-in do Python (`max`, `min`, `sum`, `sorted`) e operador `in`
+- **Complexidade:** O(n) time, O(n) space
+- **Caso de Uso:** Operações básicas de análise sobre arrays
 
 #### **Best Time to Buy and Sell Stock** (Lucas)
 - **Objetivo:** Encontrar o maior lucro possível comprando e vendendo uma ação uma única vez
@@ -145,6 +154,18 @@ python --version
 - **Complexidade:** O(n) time, O(1) space
 - **Caso de Uso:** Manipulação segura de nós, especialmente remoção em listas encadeadas
 - **Testes:** Remove 2º do fim, remove último, remove cabeça, um elemento, dois elementos (ambos os casos)
+
+#### **Inserção Ordenada em Lista Encadeada** (Sandro)
+- **Objetivo:** Inserir um elemento na posição correta em uma lista encadeada já ordenada
+- **Estratégia:** Percorrer a lista até encontrar a posição de inserção e ajustar os ponteiros
+- **Complexidade:** O(n) time, O(1) space
+- **Caso de Uso:** Manutenção de listas ordenadas sem reordenação completa
+
+#### **Remoção de Duplicatas em Lista Encadeada** (Sandro)
+- **Objetivo:** Remover nós com valores repetidos de uma lista encadeada
+- **Estratégia:** Set de valores visitados para detecção em O(1) e ajuste de ponteiros para remoção
+- **Complexidade:** O(n) time, O(n) space
+- **Caso de Uso:** Limpeza de dados em estruturas encadeadas
 
 ### 📚 Pilhas
 
@@ -199,23 +220,27 @@ Cada arquivo pode ser executado diretamente:
 
 ```bash
 # Arrays
-python best_time_to_buy_and_sell_stock.py
-python MaximumSubarray
-python .\Diego\arrays\contains_duplicate.py
-python .\Diego\arrays\product_except_self.py
+python Lucas\best_time_to_buy_and_sell_stock.py
+python Lucas\MaximumSubarray.py
+python Diego\arrays\contains_duplicate.py
+python Diego\arrays\product_except_self.py
+python Sandro\TwoSum.py
+python Sandro\ManipulacaoDoArray.py
 
 # Listas Encadeadas
-python reverse_linked_list.py
-python merge_two_sorted_lists.py
-python .\Diego\linked_lists\middle_of_linked_list.py
-python .\Diego\linked_lists\remove_nth_from_end.py
+python Lucas\reverse_linked_list.py
+python Lucas\merge_two_sorted_lists.py
+python Diego\linked_lists\middle_of_linked_list.py
+python Diego\linked_lists\remove_nth_from_end.py
+python Sandro\InsercaoOrdenada.py
+python Sandro\RemoveDuplicadaLista.py
 
 
 # Pilhas
-python min_stack.py
-python valid_parentheses.py
-python .\Diego\stacks\baseball_game.py
-python .\Diego\stacks\daily_temperatures.py
+python Lucas\min_stack.py
+python Lucas\valid_parentheses.py
+python Diego\stacks\baseball_game.py
+python Diego\stacks\daily_temperatures.py
 
 ```
 
@@ -270,8 +295,8 @@ Status: ✓ PASSOU
 
 ## 📊 Resumo de Testes
 
-- **Total de Arquivos:** 12
-- **Total de Testes:** 68+
+- **Total de Arquivos:** 16
+- **Total de Testes:** 75+
 - **Taxa de Sucesso:** 100% ✓
 
 ---
