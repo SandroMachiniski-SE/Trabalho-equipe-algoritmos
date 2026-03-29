@@ -22,7 +22,7 @@ Este projeto tem como finalidade:
 |-----------|--------------|
 | **Lucas Eufrasio** | Best Time to Buy and Sell Stock, Maximum Subarray, Reverse Linked List, Merge Two Sorted Lists, Min Stack, Valid Parentheses (Código, Documentação, Type Hints, Testes) |
 | **Diego Cunha** | Contains Duplicate, Product Except Self, Middle of Linked List, Remove Nth From End, Baseball Game, Daily Temperatures (Código, Documentação, Docstrings, Testes) |
-| **Sandro Machiniski** | Two Sum, Inserção Ordenada em Lista Encadeada, Manipulação de Array, Remoção de Duplicatas em Lista Encadeada |
+| **Sandro Machiniski** | Two Sum, Inserção Ordenada em Lista Encadeada, Manipulação de Array, Remoção de Duplicatas em Lista Encadeada, Stack that supports searching for the k-th element from the top in O(1), Reduction of character sequences by adjacent pairs (iterative removal) |
 
 ---
 
@@ -84,6 +84,8 @@ python --version
 | `valid_parentheses.py` | Validar sequência de parênteses/colchetes/chaves | Lucas | O(n) time, O(n) space | 8 testes |
 | `baseball_game.py` | Simulação de pontuação com operações em pilha | Diego | O(n) time, O(n) space | 6 testes |
 | `daily_temperatures.py` | Dias até temperatura maior usando pilha monotônica | Diego | O(n) time, O(n) space | 6 testes |
+| `search for the k-th` | Pilha que suporta buscar o k-ésimo elemento do topo | Sandro | O(1) | 4 testes |
+| `Adjacent pair reduction` | Redução de sequência de caracteres por pares adjacentes  | Sandro | O(n) | 6 testes |
 
 ---
 
@@ -195,6 +197,20 @@ python --version
 - **Caso de Uso:** Problemas de "próximo elemento maior" em sequências
 - **Testes:** Caso clássico, sequência crescente, decrescente, valores iguais, um elemento, pico no meio
 
+#### **search for the k-th** (Sandro)
+- **Objetivo:** buscar o k-ésimo elemento do topo
+- **Estratégia:** Criar uma pilha que suporte push, pop, top, len e uma operação
+- **Complexidade:** O(1) time, O(n) space
+- **Caso de Uso:** push(10), push(20), push(30)
+- **Testes:** Testes funcionais básicos, Testes de erro,  consistência, Teste simples de carga
+
+#### **Adjacent pair reduction** (Sandro)
+- **Objetivo:** reduzir removendo repetidamente pares adjacentes idênticos de caracteres até que não seja mais possível
+- **Estratégia:** Percorer a string da esquerda para a direita e usamos uma pilha (lista) para manter os caracteres que "sobrevivem" até o ponto atual.
+- **Complexidade:** O(n) time, O(n) space
+- **Caso de Uso:** Limpeza/simplificação de entradas de texto
+- **Testes:** Entrada vazia, par simples adjacente, encadeamento, manter iguais, remoção de todos, test_idempotencia
+
 Todos os arquivos foram revisados e melhorados com:
 
 ### 📝 Documentação
@@ -241,6 +257,8 @@ python Lucas\min_stack.py
 python Lucas\valid_parentheses.py
 python Diego\stacks\baseball_game.py
 python Diego\stacks\daily_temperatures.py
+python Sandro\k-esimoElementoPilha.py
+python Sandro\Reduce-pairs.py
 
 ```
 
