@@ -84,8 +84,8 @@ python --version
 | `valid_parentheses.py` | Validar sequência de parênteses/colchetes/chaves | Lucas | O(n) time, O(n) space | 8 testes |
 | `baseball_game.py` | Simulação de pontuação com operações em pilha | Diego | O(n) time, O(n) space | 6 testes |
 | `daily_temperatures.py` | Dias até temperatura maior usando pilha monotônica | Diego | O(n) time, O(n) space | 6 testes |
-| `search for the k-th` | Pilha que suporta buscar o k-ésimo elemento do topo | Sandro | O(1) | 4 testes |
-| `Adjacent pair reduction` | Redução de sequência de caracteres por pares adjacentes  | Sandro | O(n) | 6 testes |
+| `search for the k-th` | Pilha que suporta buscar o k-ésimo elemento do topo | Sandro | O(1) time, O(n) space | 4 testes |
+| `Adjacent pair reduction` | Redução de sequência de caracteres por pares adjacentes  | Sandro | O(n) time, O(n) space | 6 testes |
 
 ---
 
