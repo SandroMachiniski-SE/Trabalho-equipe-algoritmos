@@ -1,3 +1,18 @@
+# ============================================================
+# Problema   : Middle of the Linked List
+# Link       : https://leetcode.com/problems/middle-of-the-linked-list/
+# Plataforma : LeetCode
+# Estrutura  : Linked List (Lista Encadeada)
+# Justificativa: A lista encadeada não oferece acesso direto
+#   por índice, o que torna impossível calcular o meio com uma
+#   simples divisão. A solução elegante é o algoritmo dos dois
+#   ponteiros (slow/fast): o ponteiro 'fast' avança 2 nós por
+#   vez enquanto o 'slow' avança 1, de modo que quando 'fast'
+#   chega ao fim, 'slow' está exatamente no meio — tudo em
+#   O(n) de tempo e O(1) de espaço, sem percorrer a lista duas
+#   vezes nem usar estruturas auxiliares.
+# ============================================================
+
 from __future__ import annotations
 import unittest
 from typing import Optional, Iterable

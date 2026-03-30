@@ -1,3 +1,19 @@
+# ============================================================
+# Problema   : Daily Temperatures
+# Link       : https://leetcode.com/problems/daily-temperatures/
+# Plataforma : LeetCode
+# Estrutura  : Stack Monotônica (Pilha Monotônica Decrescente)
+# Justificativa: O problema exige encontrar, para cada elemento,
+#   o próximo valor maior à direita. A stack monotônica resolve
+#   isso em O(n): empilhamos índices cujas temperaturas ainda
+#   não encontraram um dia mais quente e, ao encontrar uma
+#   temperatura maior, desempilhamos e calculamos a diferença
+#   de posições em O(1). Sem essa estrutura, a abordagem ingênua
+#   seria O(n²) com dois laços aninhados. Cada índice é
+#   empilhado e desempilhado no máximo uma vez, garantindo
+#   eficiência linear mesmo no pior caso.
+# ============================================================
+
 import unittest
 from typing import List
 

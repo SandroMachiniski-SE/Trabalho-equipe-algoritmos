@@ -1,3 +1,16 @@
+# ============================================================
+# Problema   : Baseball Game
+# Link       : https://leetcode.com/problems/baseball-game/
+# Plataforma : LeetCode
+# Estrutura  : Stack (Pilha)
+# Justificativa: O problema exige acesso constante às últimas
+#   pontuações válidas para aplicar as operações '+' e 'D', e
+#   remoção imediata da mais recente com 'C'. A pilha (LIFO)
+#   é a estrutura ideal para isso: push e pop em O(1) refletem
+#   naturalmente o histórico mutável de pontuações, sem
+#   necessidade de reindexar ou percorrer a estrutura.
+# ============================================================
+
 import unittest
 from typing import List
 

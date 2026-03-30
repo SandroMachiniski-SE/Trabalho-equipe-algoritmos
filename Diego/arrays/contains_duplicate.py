@@ -1,3 +1,16 @@
+# ============================================================
+# Problema   : Contains Duplicate
+# Link       : https://leetcode.com/problems/contains-duplicate/
+# Plataforma : LeetCode
+# Estrutura  : Set (Conjunto)
+# Justificativa: O set permite verificar a existência de um
+#   elemento em O(1) de tempo médio, tornando a detecção de
+#   duplicatas eficiente em uma única passagem pela lista —
+#   resultando em complexidade O(n) no total. Diferente de uma
+#   lista comum, que exigiria O(n) por busca, o set é ideal
+#   quando precisamos apenas rastrear elementos já vistos.
+# ============================================================
+
 import unittest
 from typing import List
 

@@ -1,3 +1,18 @@
+# ============================================================
+# Problema   : Remove Nth Node From End of List
+# Link       : https://leetcode.com/problems/remove-nth-node-from-end-of-list/
+# Plataforma : LeetCode
+# Estrutura  : Linked List (Lista Encadeada)
+# Justificativa: A lista encadeada permite remoção de nós em
+#   O(1) ao ajustar ponteiros, sem precisar deslocar elementos
+#   como ocorreria em um array. A ausência de acesso por índice
+#   é contornada com dois ponteiros separados por distância n+1:
+#   quando o ponteiro 'fast' chega ao fim, o 'slow' está
+#   exatamente antes do nó a remover. O nó 'dummy' elimina a
+#   necessidade de tratar a remoção da cabeça como caso especial,
+#   tornando o algoritmo uniforme em O(n) e O(1) de espaço.
+# ============================================================
+
 from __future__ import annotations
 import unittest
 from typing import Optional, Iterable

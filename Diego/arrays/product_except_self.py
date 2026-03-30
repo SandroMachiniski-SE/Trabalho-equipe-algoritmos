@@ -1,3 +1,16 @@
+# ============================================================
+# Problema   : Product of Array Except Self
+# Link       : https://leetcode.com/problems/product-of-array-except-self/
+# Plataforma : LeetCode
+# Estrutura  : Array (Lista)
+# Justificativa: O problema exige calcular produtos acumulados
+#   sem usar divisão. O array é a estrutura ideal pois permite
+#   acesso direto por índice em O(1), viabilizando as duas
+#   passagens (prefixo da esquerda e sufixo da direita) que
+#   constroem a resposta final em O(n) com O(1) de espaço extra,
+#   sem necessidade de estruturas auxiliares adicionais.
+# ============================================================
+
 import unittest
 from typing import List
 
