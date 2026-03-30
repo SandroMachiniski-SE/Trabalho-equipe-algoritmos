@@ -1,5 +1,6 @@
 
 def reduce_pairs(s: str) -> str:
+    
     """
     Remove pares adjacentes idênticos repetidamente usando pilha.
     Retorna a string final.

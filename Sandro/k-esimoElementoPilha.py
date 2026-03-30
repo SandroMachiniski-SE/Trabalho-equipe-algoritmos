@@ -1,6 +1,7 @@
 from typing import Any, List
 
 class StackK:
+    
     """
     Pilha com acesso O(1) ao k-ésimo elemento a partir do topo.
     Implementação: usamos uma lista interna; kth_from_top(k) acessa a partir do final:
