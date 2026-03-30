@@ -31,12 +31,6 @@ Este projeto tem como finalidade:
 - **Python:** 3.8 ou superior
 - **Dependências:** Nenhuma (apenas biblioteca padrão do Python)
 
-Para verificar sua versão do Python:
-```bash
-python --version
-```
-
----
 
 - **Ferramenta:** ChatGPT  
 - **Acesso:** Web (navegador)  
