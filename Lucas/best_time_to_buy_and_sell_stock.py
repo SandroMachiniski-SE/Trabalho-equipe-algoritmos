@@ -1,3 +1,17 @@
+# ============================================================
+# Problema   : Best Time to Buy and Sell Stock
+# Link       : https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+# Plataforma : LeetCode
+# Estrutura  : Array (Lista)
+# Justificativa: O array é ideal pois o problema exige uma
+#   única passagem sequencial pelos preços, rastreando apenas
+#   o menor valor visto até o momento e o lucro máximo possível.
+#   O acesso por iteração em O(n) com apenas duas variáveis
+#   auxiliares garante complexidade O(n) de tempo e O(1) de
+#   espaço — sem necessidade de estruturas extras como pilhas
+#   ou tabelas hash.
+# ============================================================
+
 class Solution:
     def maxProfit(self, prices: list[int]) -> int:
         """

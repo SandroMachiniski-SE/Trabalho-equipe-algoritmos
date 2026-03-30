@@ -1,3 +1,20 @@
+# ============================================================
+# Problema   : K-ésimo elemento da pilha
+# Link       : N/A (implementação própria)
+# Plataforma : Implementação própria / Estrutura de Dados
+# Estrutura  : Stack (Pilha) baseada em Array (lista Python)
+# Justificativa: A pilha foi implementada utilizando uma lista
+#   dinâmica (array) do Python, que oferece operações eficientes
+#   no final da estrutura, como append e pop em O(1). Além disso,
+#   o uso de indexação negativa permite acessar diretamente o
+#   k-ésimo elemento a partir do topo (self._data[-k]) também em
+#   O(1), sem necessidade de percorrer a pilha. Isso torna a
+#   solução mais eficiente do que uma pilha tradicional baseada
+#   apenas em operações sequenciais, onde seria necessário iterar
+#   até o elemento desejado. Assim, todas as operações principais
+#   (push, pop, top e kth_from_top) possuem complexidade O(1).
+# ============================================================
+
 from typing import Any, List
 
 class StackK:

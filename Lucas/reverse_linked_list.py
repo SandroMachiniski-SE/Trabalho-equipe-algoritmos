@@ -1,3 +1,19 @@
+# ============================================================
+# Problema   : Reverse Linked List
+# Link       : https://leetcode.com/problems/reverse-linked-list/
+# Plataforma : LeetCode
+# Estrutura  : Linked List (Lista Encadeada)
+# Justificativa: A lista encadeada é ideal para este problema
+#   porque permite alterar diretamente os ponteiros entre os nós
+#   sem necessidade de realocar memória. A solução percorre a lista
+#   uma única vez, invertendo as referências (next) de cada nó,
+#   utilizando apenas variáveis auxiliares (anterior, atual e próximo).
+#   Isso garante complexidade O(n) no tempo e O(1) em espaço.
+#   Diferente de um array, onde seria necessário mover elementos
+#   ou criar cópias, a linked list permite a inversão de forma
+#   eficiente apenas manipulando referências.
+# ============================================================
+
 from typing import Optional
 
 

@@ -1,3 +1,21 @@
+# ============================================================
+# Problema   : Valid Parentheses
+# Link       : https://leetcode.com/problems/valid-parentheses/
+# Plataforma : LeetCode
+# Estrutura  : Stack (Pilha)
+# Justificativa: A pilha é a estrutura ideal para este problema
+#   porque segue o princípio LIFO (Last In, First Out), que se
+#   encaixa perfeitamente na validação de símbolos aninhados.
+#   Cada símbolo de abertura é empilhado, e ao encontrar um
+#   símbolo de fechamento, verifica-se se ele corresponde ao
+#   último elemento inserido. Isso garante que não haja
+#   cruzamento de pares e que a ordem esteja correta.
+#   Sem a pilha, seria necessário um controle mais complexo
+#   da sequência, tornando a solução menos eficiente.
+#   Dessa forma, o algoritmo percorre a string uma única vez,
+#   com complexidade O(n).
+# ============================================================
+
 class Solution:
     def isValid(self, s: str) -> bool:
         """

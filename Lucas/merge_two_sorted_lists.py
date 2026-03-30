@@ -1,3 +1,18 @@
+# ============================================================
+# Problema   : Merge Two Sorted Lists
+# Link       : https://leetcode.com/problems/merge-two-sorted-lists/
+# Plataforma : LeetCode
+# Estrutura  : Linked List (Lista Encadeada)
+# Justificativa: A lista encadeada permite redirecionar ponteiros
+#   em O(1) para unir nós de duas listas sem alocar novos nós,
+#   resultando em O(1) de espaço extra. O nó 'dummy' elimina a
+#   necessidade de tratar a cabeça da lista como caso especial.
+#   Um array exigiria realocação de memória para inserções, o
+#   que tornaria a mesclagem menos eficiente. A linked list
+#   é a escolha natural para operações de fusão ordenada em
+#   O(n + m) de tempo.
+# ============================================================
+
 from typing import Optional
 
 

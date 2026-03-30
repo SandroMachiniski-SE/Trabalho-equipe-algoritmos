@@ -1,3 +1,20 @@
+# ============================================================
+# Problema   : Min Stack
+# Link       : https://leetcode.com/problems/min-stack/
+# Plataforma : LeetCode
+# Estrutura  : Stack (Pilha) com pilha auxiliar
+# Justificativa: A pilha é a estrutura ideal porque todas as
+#   operações exigidas pelo problema acontecem no topo, como
+#   inserção, remoção e consulta. Para garantir getMin() em O(1),
+#   a solução utiliza uma segunda pilha auxiliar que armazena os
+#   menores valores conforme os elementos são inseridos. Assim,
+#   sempre que um novo valor menor ou igual ao mínimo atual entra,
+#   ele também é colocado na min_stack. Isso evita percorrer toda
+#   a pilha principal para descobrir o menor elemento, o que
+#   levaria O(n). Dessa forma, push, pop, top e getMin permanecem
+#   com complexidade O(1).
+# ============================================================
+
 class MinStack:
     """
     Implementa uma pilha com operação de obter o mínimo em O(1).

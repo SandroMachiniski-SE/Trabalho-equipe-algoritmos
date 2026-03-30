@@ -1,3 +1,19 @@
+# ============================================================
+# Problema   : Manipulação de Array (Lista de Números)
+# Link       : N/A (implementação própria)
+# Plataforma : Implementação própria / Estrutura de Dados
+# Estrutura  : Array (Lista em Python)
+# Justificativa: A estrutura de array (lista em Python) é adequada
+#   para este problema porque permite armazenar múltiplos valores
+#   de forma sequencial e oferece operações prontas e eficientes,
+#   como inserção (append), busca (operador in), ordenação (sorted)
+#   e funções agregadas como max, min e sum. Essas operações são
+#   otimizadas internamente e facilitam a manipulação dos dados.
+#   Como o problema envolve leitura, análise e consulta de valores,
+#   o uso de array é simples, direto e eficiente para esse tipo de
+#   processamento.
+# ============================================================
+
 # criando uma lista para entrada do usuário
 
 numeros = []

@@ -1,3 +1,18 @@
+# ============================================================
+# Problema   : Maximum Subarray
+# Link       : https://leetcode.com/problems/maximum-subarray/
+# Plataforma : LeetCode
+# Estrutura  : Array (Lista)
+# Justificativa: O array é a estrutura natural para o Algoritmo
+#   de Kadane, que resolve o problema em uma única passagem
+#   sequencial. Em cada posição, basta decidir entre estender
+#   o subarray atual ou iniciar um novo — decisão feita em O(1)
+#   com apenas duas variáveis auxiliares (max_current e
+#   max_global). Não há necessidade de estruturas extras como
+#   pilhas ou tabelas hash, resultando em O(n) de tempo e
+#   O(1) de espaço.
+# ============================================================
+
 class Solution:
     def maxSubArray(self, nums: list[int]) -> int:
         """

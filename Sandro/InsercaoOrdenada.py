@@ -1,3 +1,20 @@
+# ============================================================
+# Problema   : Inserção Ordenada em Lista Encadeada
+# Link       : N/A (implementação própria)
+# Plataforma : Implementação própria / Estrutura de Dados
+# Estrutura  : Linked List (Lista Encadeada)
+# Justificativa: A lista encadeada é adequada para este problema
+#   porque permite inserir elementos em qualquer posição sem
+#   necessidade de deslocar outros elementos, apenas ajustando
+#   ponteiros. Durante a inserção, percorremos a lista até
+#   encontrar a posição correta e atualizamos as referências
+#   (next) para incluir o novo nó. Em estruturas como arrays,
+#   seria necessário deslocar vários elementos para manter a
+#   ordem, o que tornaria a operação menos eficiente (O(n)).
+#   Já na lista encadeada, a inserção em si ocorre em O(1),
+#   sendo necessário apenas o custo de busca O(n).
+# ============================================================
+
 class Node:
     def __init__(self, data):
         self.data = data

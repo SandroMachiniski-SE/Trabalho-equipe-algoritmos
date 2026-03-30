@@ -1,3 +1,20 @@
+# ============================================================
+# Problema   : Remover Duplicatas de Lista Encadeada
+# Link       : N/A (implementação própria)
+# Plataforma : Implementação própria / Estrutura de Dados
+# Estrutura  : Linked List + Hash Set (Conjunto)
+# Justificativa: A lista encadeada é utilizada para armazenar
+#   os elementos de forma dinâmica, permitindo a remoção de nós
+#   apenas ajustando ponteiros, sem necessidade de deslocamento
+#   de dados. Para garantir eficiência na detecção de duplicatas,
+#   é utilizado um conjunto (set), que permite verificar se um
+#   elemento já foi visto em tempo O(1). Assim, ao percorrer a
+#   lista uma única vez, é possível remover duplicatas de forma
+#   eficiente, resultando em complexidade O(n) no tempo e O(n)
+#   no espaço. Sem o uso do set, seria necessário comparar cada
+#   elemento com os demais, levando a O(n²).
+# ============================================================
+
 class Node:
     def __init__(self, data):
         self.data = data

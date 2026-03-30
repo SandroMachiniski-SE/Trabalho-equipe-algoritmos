@@ -1,3 +1,18 @@
+# ============================================================
+# Problema   : Two Sum
+# Link       : https://leetcode.com/problems/two-sum/
+# Plataforma : LeetCode
+# Estrutura  : Hash Map (Dicionário)
+# Justificativa: O uso de um hash map (dicionário) permite
+#   armazenar os valores já percorridos junto com seus índices,
+#   possibilitando verificar em tempo O(1) se o complemento
+#   necessário (target - num) já foi visto anteriormente.
+#   Dessa forma, o problema é resolvido em apenas uma passagem
+#   pela lista (O(n)), evitando a abordagem ingênua de dois loops
+#   aninhados, que teria complexidade O(n²). O dicionário é ideal
+#   para esse tipo de busca rápida por chave.
+# ============================================================
+
 class Solution:
     def twoSum(self, nums, target):
         mapa = {}  # valor -> índice
