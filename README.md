@@ -63,7 +63,7 @@ python --version
 | `contains_duplicate.py` | Retorna True se existir valor repetido | Diego | O(n) time, O(n) space | 6 testes |
 | `product_except_self.py` | Produto de todos exceto o atual (sem divisão) | Diego | O(n) time, O(n) space | 6 teste |
 | `TwoSum.py` | Encontrar dois números que somam um alvo | Sandro | O(n) time, O(n) space | 2 testes |
-| `ManipulacaoDoArray.py` | Leitura interativa, exibição de estatísticas e busca em array | Sandro | O(n) time, O(n) space | - |
+| `ManipulacaoDoArray.py` | Leitura interativa, exibição de estatísticas e busca em array | Sandro | O(n) time, O(n) space | 2 testes |
 
 ### 🔗 Listas Encadeadas
 
@@ -73,7 +73,7 @@ python --version
 | `merge_two_sorted_lists.py` | Mesclar duas listas encadeadas ordenadas | Lucas | O(n + m) time, O(1) space | 6 testes |
 | `middle_of_linked_list.py` | Encontrar o elemento central da lista | Diego | O(n) time, O(1) space | 6 teste |
 | `remove_nth_from_end.py` | Remover o n-ésimo nó a partir do final | Diego | O(n) time, O(1) space | 6 teste |
-| `InsercaoOrdenada.py` | Inserção ordenada em lista encadeada | Sandro | O(n) time, O(1) space | - |
+| `InsercaoOrdenada.py` | Inserção ordenada em lista encadeada | Sandro | O(n) time, O(1) space | 2 testes |
 | `RemoveDuplicadaLista.py` | Remoção de nós duplicados em lista encadeada | Sandro | O(n) time, O(n) space | 1 teste |
 
 ### 📚 Pilhas
